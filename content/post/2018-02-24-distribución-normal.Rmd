@@ -1,0 +1,81 @@
+---
+title: Distribución Normal
+author: William Chavarria Z.
+date: '2018-02-24'
+categories:
+  - Estadística Inferencial
+tags:
+  - R Markdown
+slug: distribución-normal
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+
+opts_chunk$set(echo = TRUE,
+                      cache = TRUE,
+                      fig.align = 'center',
+                      message = FALSE,
+                      warning = FALSE, 
+                      comment = '#',
+                      strip.white = TRUE,
+                      highlight = TRUE,
+                      fig.width = 8,
+                      fig.height = 5)
+
+opts_knit$set(upload.fun = imgur_upload, base.url = NULL)
+```
+
+
+```{r cargar_paquetes, include=FALSE}
+# paquetes necesarios
+  paquetes <- c('kableExtra')
+
+# cargar librerías
+sapply(paquetes, require, character.only = TRUE, quiet = TRUE)
+```
+
+## Descripción Problema 1
+
+Tenemos un programa de entrenamiento diseñado para mejorar la calidad de las habilidades de los supervisores de línea de producción. Debido a que el programa es autoadministrado, los supervisores requieren un número diferente de horas para terminarlo. Un estudio de los participantes anteriores indica que el tiempo medio para completar el programa es de **500** horas, y que esta variable aleatoria normalmente distribuida tiene una desviación estándar de **100** horas
+
+## Problema
+
+¿Cuál es la probabilidad de que un candidato elegido al azar se tome más de 700 horas en completar el programa?
+
+```{r valores_iniciales}
+med <- 500
+des <- 100
+```
+
+```{r crear_secuencia}
+xvals <- seq(200, 800, by = 1)
+fx    <- dnorm(x = xvals, mean = med, sd = des)
+```
+
+
+```{r limites}
+# calcular los límites a utilizar para delimitar la región dentro del gráfico
+xvals.sub <- xvals[xvals >= 700 & xvals <= 800]
+fx.sub    <- fx[xvals >= 700 & xvals <= 800]
+```
+
+```{r probabilidad}
+ # calcular la probabilidad
+p700 <-round(pnorm(q = 700, mean = med, sd = des, lower.tail = FALSE), 4)
+```
+
+
+```{r grafica_inicial}
+plot(x = xvals, y = fx, type = 'l', xlim = c(200, 800), main = 'N(500, 100) distribution', xlab = 'x', ylab = 'f(x)')
+  polygon(x = c(min(xvals.sub), xvals.sub, max(xvals.sub)), y = c(0, fx.sub, 0), col = '#E7B800', border = 'black', lty = 2)
+  abline(h = 0, col = 'black')
+  abline(v = 700, lty = 3)
+  abline(v = c(med, median(xvals)))
+  arrows(x0 = 750,                    # inicia x
+         y0 = fx[xvals == 700],       # inicia y
+         x1 = 715,                    # termina x
+         y1 = 0.00015,                # termina y
+         length = 0.083)
+text(x = 772, y = 0.00058,labels = p700, cex = 0.8)
+```
