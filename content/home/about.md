@@ -10,31 +10,27 @@ weight = 5
 # List your academic interests.
 [interests]
   interests = [
-    "Artificial Intelligence",
-    "Computational Linguistics",
-    "Information Retrieval"
+    "Machine Learning",
+    "Predictive Analytics",
+    "Functional Programming"
   ]
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Artificial Intelligence"
-  institution = "Stanford University"
-  year = 2012
+  course = "MBA"
+  institution = "Universidad Rafael Landívar"
+  year = 2014
 
 [[education.courses]]
-  course = "MEng in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2009
-
-[[education.courses]]
-  course = "BSc in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2008
+  course = "System Engineering"
+  institution = "UNICIT"
+  year = 2002
  
 +++
 
-# Biography
+# Biografía
 
-Lena Smith is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Ingeniero de Sistemas con más de 16 años en la industria de las telecomunicaciones.  Apasionado de la ciencia de datos, y fanático autodidacta de R.
+Actualmente cursando una Maestría en Business Intelligence & Analytics en la Universidad del Valle de Guatemala.  Lidero un pequeño equipo de trabajo enfocado en el mantenimiento predictivo de la red de transmisión de una importante compañía de telecomunicaciones.  
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+Dedicamos dos terceras partes de nuestro tiempo en proyectos relacionados con el análisis y recolección de datos a través de sensores y de aplicaciones móviles. Nos entusiasma y llena de energía el poder dar respuesta a diversas preguntas relacionadas a la indentificación y mitigación de fallas.

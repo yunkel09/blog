@@ -55,14 +55,14 @@ defaultContentLanguageInSubdir = false
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "Stanford University", url = "" } ]
+  organizations = [ { name = "Universidad del Valle de Guatemala", url = "http://uvg.edu.gt/" } ]
 
-  gravatar = false  # Get your avatar from Gravatar.com? (true/false)
+  gravatar = true  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  email = "test@example.org"
+  email = "yunkel09@outlook.com"
   address = "Building 1 Room 1, Stanford University, California, 90210, USA"
   office_hours = "Monday 10:00 to 13:00 or email for appointment"
-  phone = "888 888 88 88"
+  phone = "+(502) 400-9655"
   skype = "echo123"
   telegram = ""
 
@@ -145,8 +145,8 @@ defaultContentLanguageInSubdir = false
   #   For more info on the highlighting options, see:
   #   https://sourcethemes.com/academic/post/writing-markdown-latex/#highlighting-options
   highlight = true
-  highlight_languages = []
-  # highlight_style = "github"
+  highlight_languages = ["r"]
+  highlight_style = "hopscotch"
 
   # Enable native social sharing buttons?
   sharing = true
