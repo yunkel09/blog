@@ -30,7 +30,8 @@ weight = 5
 
 # Biografía
 
-Ingeniero de Sistemas con más de 16 años en la industria de las telecomunicaciones.  Apasionado de la ciencia de datos, y fanático autodidacta de R.
-Actualmente cursando una Maestría en Business Intelligence & Analytics en la Universidad del Valle de Guatemala.  Lidero un pequeño equipo de trabajo enfocado en el mantenimiento predictivo de la red de transmisión de una importante compañía de telecomunicaciones.  
+Ingeniero de Sistemas con más de 16 años en la industria de las telecomunicaciones.  Apasionado de la analítica a tiempo completo y estudiante autodidacta de R a medio tiempo.
 
-Dedicamos dos terceras partes de nuestro tiempo en proyectos relacionados con el análisis y recolección de datos a través de sensores y de aplicaciones móviles. Nos entusiasma y llena de energía el poder dar respuesta a diversas preguntas relacionadas a la indentificación y mitigación de fallas.
+Actualmente cursando una Maestría en Business Intelligence & Analytics en la Universidad del Valle de Guatemala. Lidero un pequeño equipo de trabajo enfocado en el mantenimiento predictivo de la red de transmisión de una importante compañía de telecomunicaciones. Dedicamos dos terceras partes de nuestro tiempo en proyectos relacionados con el análisis y recolección de datos a través de sensores y de aplicaciones móviles. 
+
+
